@@ -1,26 +1,11 @@
-# Plan: Mishka's Ebook Creation - "The Giant Adventure"
+# Plan: Mishka's Ebook - Publisher Edition ("The Giant Adventure")
 
 ## Overview
-Transform 20 photos of 8-year-old Mishka Pant's handmade book ("The Giant adventure") into digital ebook formats (Interactive Web Ebook HTML/CSS, EPUB3, and Printable PDF).
-
-## Key Features & Requirements
-1. **Transcribe & Preserve**: Accurately transcribe all handwritten story text while preserving original childhood charm and illustrations.
-2. **Interactive Web Ebook**:
-   - Flip-book / page-by-page reader layout.
-   - Interactive Flap & Pull-Tab animations replicating the physical book's lift-the-flap (Desert Island, Space Hole), pull-tab (Flower Island), and envelope-opening (Treasure Island Map) features.
-   - Display side-by-side or stacked original drawings and formatted text.
-3. **EPUB3 Ebook (`the_giant_adventure.epub`)**:
-   - Standard EPUB reader format compatible with Apple Books, Kindle, e-readers.
-   - Complete metadata: Author/Illustrator = Mishka Pant.
-4. **Printable PDF Ebook (`the_giant_adventure.pdf`)**:
-   - High-quality picture storybook layout generated via Python (`reportlab` / `Pillow`).
-5. **Quality Gates**:
-   - Zero TODOs.
-   - Clean structure and responsive design.
+Create a publisher-ready edition of 8-year-old Mishka Pant's book "The Giant Adventure" with lightly polished text, 15 high-quality illustrations based on her original drawings, a front cover, and an end cover with an "About the Book" section.
 
 ## Execution Checklist
-- [x] Step 1: Extract and inspect all 20 photos.
-- [x] Step 2: Transcribe all handwritten pages and catalog illustrations & interactive flaps.
-- [ ] Step 3: Implement Python builder script for EPUB (`the_giant_adventure.epub`) and PDF (`the_giant_adventure.pdf`).
-- [ ] Step 4: Build Interactive Web Ebook (`index.html`) with CSS/JS animations for lift-the-flap & pull-tabs.
-- [ ] Step 5: Verify all output formats and quality gates.
+- [ ] Step 1: Update Story Manuscript (`story.md`) with polished story text and "About the Book" back-cover section.
+- [ ] Step 2: Generate 15 high-quality illustrations (`illustrations/`) matching Mishka's original drawings (Cover, Pages 1-13, Back Cover).
+- [ ] Step 3: Update and run `build_pdf.py` and `build_epub.py` (with unit tests) to generate publisher-ready PDF and EPUB books.
+- [ ] Step 4: Update Interactive Web Ebook (`index.html`, `styles.css`, `script.js`) with publisher illustrations, polished text, and "About the Book" back cover.
+- [ ] Step 5: Verify quality gates (TODO Enforcer & unit tests) and push to GitHub.

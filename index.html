@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Giant Adventure by Mishka Pant</title>
+    <title>The Giant Adventure — Written &amp; Illustrated by Mishka Pant</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,296 +14,405 @@
     <header>
         <div class="header-title">
             <h1>📖 The Giant Adventure</h1>
-            <p>Written & Illustrated by Mishka Pant (Age 8)</p>
+            <p>Written & Illustrated by Mishka Pant (Age 8) — Publisher Edition</p>
         </div>
         <div class="header-actions">
             <button id="readAloudBtn" class="btn">🔊 Read Aloud</button>
+            <button id="toggleOriginalsBtn" class="btn">🖼️ Compare Original Drawings</button>
             <button id="tocBtn" class="btn">📑 Contents</button>
-            <a href="the_giant_adventure.pdf" download class="btn btn-primary">📥 PDF Ebook</a>
+            <a href="the_giant_adventure.pdf" download class="btn btn-primary">📥 Publisher PDF</a>
             <a href="the_giant_adventure.epub" download class="btn">📱 EPUB</a>
         </div>
     </header>
 
-    <!-- Table of Contents Drawer -->
     <div id="tocDrawer" class="toc-drawer">
         <h3>Story Directory</h3>
         <ul class="toc-list">
-            <li class="toc-item" data-page="1">🎨 Cover Page</li>
+            <li class="toc-item" data-page="1">🎨 Front Cover</li>
             <li class="toc-item" data-page="2">Page 1: Flight to Singapore</li>
             <li class="toc-item" data-page="3">Page 2: Greenland Island</li>
-            <li class="toc-item" data-page="4">Page 3: Desert Island (Flap!)</li>
+            <li class="toc-item" data-page="4">Page 3: Desert Island</li>
             <li class="toc-item" data-page="5">Page 4: The Space Hole</li>
-            <li class="toc-item" data-page="6">Page 5: Flower Island (Pull-Tab!)</li>
+            <li class="toc-item" data-page="6">Page 5: Flower Island</li>
             <li class="toc-item" data-page="7">Page 6: Chocolate Island</li>
-            <li class="toc-item" data-page="8">Page 7: Treasure Island (Map!)</li>
+            <li class="toc-item" data-page="8">Page 7: Treasure Island & The Map</li>
             <li class="toc-item" data-page="9">Page 8: Centre of the Earth</li>
-            <li class="toc-item" data-page="10">Page 9: Cloud Castle</li>
-            <li class="toc-item" data-page="11">Page 10: Magical World</li>
-            <li class="toc-item" data-page="12">Page 11: Flight to Bangalore</li>
-            <li class="toc-item" data-page="13">Page 12: Mysterious Unicorn</li>
+            <li class="toc-item" data-page="10">Page 9: The Cloud Castle</li>
+            <li class="toc-item" data-page="11">Page 10: The Magical World</li>
+            <li class="toc-item" data-page="12">Page 11: Flight Home to Bangalore</li>
+            <li class="toc-item" data-page="13">Page 12: Planet Earth 2 & The Mysterious Unicorn</li>
             <li class="toc-item" data-page="14">Page 13: Where to Next?</li>
-            <li class="toc-item" data-page="15">❤️ Back Cover (The End)</li>
+            <li class="toc-item" data-page="15">❤️ Back Cover &amp; About the Book</li>
         </ul>
     </div>
 
     <main class="main-container">
-
-        <!-- Navigation Bar -->
         <div class="nav-controls">
             <button id="prevBtn" class="nav-btn">◀ Previous</button>
-            <span id="pageNumDisplay" class="page-indicator">Cover</span>
+            <span id="pageNumDisplay" class="page-indicator">Front Cover</span>
             <button id="nextBtn" class="nav-btn">Next ▶</button>
         </div>
 
         <div class="book-card">
-
-            <!-- PAGE 1: COVER -->
+            
+            <!-- PAGE 1: FRONT COVER -->
             <div id="page-1" class="page-content active">
                 <h2 class="page-title">The Giant Adventure</h2>
-                <p style="text-align: center; font-size: 1.2rem; color: #d9381e; font-weight: bold; margin-bottom: 1rem;">
-                    Written & Illustrated by Mishka Pant
+                <p style="text-align: center; font-size: 1.25rem; color: #1b6ca8; font-weight: bold; margin-bottom: 1rem;">
+                    Written & Illustrated by Mishka Pant (Age 8)
                 </p>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM.jpeg" alt="Original Cover Illustration">
-                        <div class="img-label">Original Handwritten Cover Page</div>
+                        <img src="illustrations/cover_illustration.png" alt="Front Cover Illustration">
+                        <div class="img-label">Publisher Edition Front Cover</div>
+                    </div>
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                            <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM.jpeg" alt="Original Handmade Cover">
+                            <div class="img-label">Mishka's Original Handmade Cover</div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 2: SINGAPORE -->
+            <!-- PAGE 1: FLIGHT TO SINGAPORE -->
             <div id="page-2" class="page-content">
                 <h2 class="page-title">Page 1: Flight to Singapore</h2>
-                <div class="story-bubble">
-                    "Me and My Friends Mira and billy always go somewhere in the holidays so this time we went to Singapore but the plane crashed in water everyone went on land excepte us we were stuck so we swam to an island I got some coconuts and Mira got some berries."
-                </div>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (1).jpeg" alt="Plane crash drawing">
-                        <div class="img-label">Illustration: Plane crash and swimming to island</div>
+                        <img src="illustrations/page1_plane_crash.png" alt="Page 1: Flight to Singapore Illustration">
+                        <div class="img-label">Publisher Illustration — Page 1: Flight to Singapore</div>
                     </div>
-                    <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (2).jpeg" alt="Handwritten text page 1">
-                        <div class="img-label">Original Handwritten Page 1</div>
+                </div>
+                <div class="story-bubble">
+                    My friends Mira, Billy, and I always go somewhere for the holidays. This time, we were flying to Singapore, but our plane crashed into the water! Everyone else made it to shore except for us. We were stuck, so we swam to a nearby island. I gathered some coconuts, and Mira found some berries.
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (1).jpeg" alt="Original drawing for Page 1: Flight to Singapore">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
+<div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (2).jpeg" alt="Original drawing for Page 1: Flight to Singapore">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 3: GREENLAND -->
+            <!-- PAGE 2: GREENLAND ISLAND -->
             <div id="page-3" class="page-content">
                 <h2 class="page-title">Page 2: Greenland Island</h2>
-                <div class="story-bubble">
-                    "Next we went to greenland ilssand over there we saw a bear we knew that do not eat dead people so we act to be dead."
-                </div>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (3).jpeg" alt="Greenland Bear drawing">
-                        <div class="img-label">Illustration: Bear and friends pretending to be dead</div>
+                        <img src="illustrations/page2_greenland_bear.png" alt="Page 2: Greenland Island Illustration">
+                        <div class="img-label">Publisher Illustration — Page 2: Greenland Island</div>
+                    </div>
+                </div>
+                <div class="story-bubble">
+                    Next, we went to Greenland Island. Over there, we spotted a bear! We knew that bears do not eat dead people, so we all lay down on the grass and pretended to be dead.
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (3).jpeg" alt="Original drawing for Page 2: Greenland Island">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 4: DESERT ISLAND (LIFT-THE-FLAP) -->
+            <!-- PAGE 3: DESERT ISLAND -->
             <div id="page-4" class="page-content">
                 <h2 class="page-title">Page 3: Desert Island</h2>
-                <div style="text-align: center;">
-                    <div class="interactive-badge">✨ Interactive Page: Click the flap or photo below to Lift the Flap! ✨</div>
+                <div class="image-gallery">
+                    <div class="img-wrapper">
+                        <img src="illustrations/page3_desert_island.png" alt="Page 3: Desert Island Illustration">
+                        <div class="img-label">Publisher Illustration — Page 3: Desert Island</div>
+                    </div>
                 </div>
                 <div class="story-bubble">
-                    "Next we went to desert island in the island we saw a camel so we rode on it we even saw a volcano."
+                    After that, we traveled to Desert Island. On the island, we found a friendly camel and rode on its back. Along the way, we even saw an erupting volcano!
                 </div>
-                <div class="image-gallery">
-                    <div class="img-wrapper interactive-flap-container" title="Click to lift flap">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (4).jpeg" class="flap-closed" alt="Flap Closed">
-                        <div class="img-label">Flap Closed: "Open" with blue hearts</div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (5).jpeg" alt="Flap Open">
-                        <div class="img-label">Flap Opened: Camel ride and volcano drawing</div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (4).jpeg" alt="Original drawing for Page 3: Desert Island">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
+<div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (5).jpeg" alt="Original drawing for Page 3: Desert Island">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 5: SPACE HOLE -->
+            <!-- PAGE 4: THE SPACE HOLE -->
             <div id="page-5" class="page-content">
                 <h2 class="page-title">Page 4: The Space Hole</h2>
-                <div class="story-bubble">
-                    "Then we found a hole so we went in it and we were in space! We explored new things then went back to earth."
-                </div>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (6).jpeg" alt="Space Hole drawing">
-                        <div class="img-label">Illustration: Entering space hole and viewing planets</div>
+                        <img src="illustrations/page4_space_hole.png" alt="Page 4: The Space Hole Illustration">
+                        <div class="img-label">Publisher Illustration — Page 4: The Space Hole</div>
+                    </div>
+                </div>
+                <div class="story-bubble">
+                    Then we discovered a mysterious hole. When we jumped inside, we found ourselves floating in outer space! We explored wonderful new planets and then headed back to Earth.
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (6).jpeg" alt="Original drawing for Page 4: The Space Hole">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 6: FLOWER ISLAND (PULL TAB) -->
+            <!-- PAGE 5: FLOWER ISLAND -->
             <div id="page-6" class="page-content">
                 <h2 class="page-title">Page 5: Flower Island</h2>
-                <div style="text-align: center;">
-                    <div class="interactive-badge">✨ Interactive Page: Click the photo below to Pull the Tab! ✨</div>
+                <div class="image-gallery">
+                    <div class="img-wrapper">
+                        <img src="illustrations/page5_flower_island.png" alt="Page 5: Flower Island Illustration">
+                        <div class="img-label">Publisher Illustration — Page 5: Flower Island</div>
+                    </div>
                 </div>
                 <div class="story-bubble">
-                    "And we found ourselves on flower island we slept there for one night."
+                    Soon, we found ourselves on Flower Island, where beautiful flowers bloomed everywhere. We slept there peacefully for one night.
                 </div>
-                <div class="image-gallery">
-                    <div class="img-wrapper interactive-tab-container" title="Click to pull tab">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (7).jpeg" alt="Pull Tab Closed">
-                        <div class="img-label">Tab Closed: "PULL" tab</div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (8).jpeg" alt="Tab Pulled">
-                        <div class="img-label">Tab Pulled: Flowers popping up!</div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (7).jpeg" alt="Original drawing for Page 5: Flower Island">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
+<div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (8).jpeg" alt="Original drawing for Page 5: Flower Island">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 7: CHOCOLATE ISLAND -->
+            <!-- PAGE 6: CHOCOLATE ISLAND -->
             <div id="page-7" class="page-content">
                 <h2 class="page-title">Page 6: Chocolate Island</h2>
-                <div class="story-bubble">
-                    "Then we swam to chocolate island over there we saw a candy house in the candy house we saw a chocolate man and a caramel women they gave us candy and they told us about treasure island."
-                </div>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (9).jpeg" alt="Candy House drawing">
-                        <div class="img-label">Illustration: Candy house, chocolate man, caramel woman</div>
+                        <img src="illustrations/page6_chocolate_island.png" alt="Page 6: Chocolate Island Illustration">
+                        <div class="img-label">Publisher Illustration — Page 6: Chocolate Island</div>
+                    </div>
+                </div>
+                <div class="story-bubble">
+                    Next, we swam to Chocolate Island and saw a house made of candy! Inside lived a Chocolate Man and a Caramel Woman. They gave us delicious sweets and told us all about Treasure Island.
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (9).jpeg" alt="Original drawing for Page 6: Chocolate Island">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 8: TREASURE ISLAND (ENVELOPE) -->
+            <!-- PAGE 7: TREASURE ISLAND & THE MAP -->
             <div id="page-8" class="page-content">
-                <h2 class="page-title">Page 7: Treasure Island & Map</h2>
-                <div style="text-align: center;">
-                    <div class="interactive-badge">✨ Interactive Page: Click envelope photo below to Open Envelope & Map! ✨</div>
+                <h2 class="page-title">Page 7: Treasure Island & The Map</h2>
+                <div class="image-gallery">
+                    <div class="img-wrapper">
+                        <img src="illustrations/page7_treasure_island.png" alt="Page 7: Treasure Island & The Map Illustration">
+                        <div class="img-label">Publisher Illustration — Page 7: Treasure Island & The Map</div>
+                    </div>
                 </div>
                 <div class="story-bubble">
-                    "In the morning we went to treasure island over there we found some gold coins and a map we followed were the map told us to go and......."
+                    In the morning, we set off for Treasure Island. There, we discovered a chest of gold coins and a secret map! We followed the trail on the map, and...
                 </div>
-                <div class="image-gallery">
-                    <div class="img-wrapper interactive-envelope-container" title="Click to open envelope">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (10).jpeg" alt="Closed Envelope">
-                        <div class="img-label">Envelope Closed: Marked "OPEN" next to treasure chest</div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM.jpeg" alt="Open Envelope with Map">
-                        <div class="img-label">Envelope Opened: Folded "MAP" revealed!</div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.18 PM (10).jpeg" alt="Original drawing for Page 7: Treasure Island & The Map">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
+<div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM.jpeg" alt="Original drawing for Page 7: Treasure Island & The Map">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 9: CENTRE OF THE EARTH -->
+            <!-- PAGE 8: CENTRE OF THE EARTH -->
             <div id="page-9" class="page-content">
                 <h2 class="page-title">Page 8: Centre of the Earth</h2>
-                <div class="story-bubble">
-                    "We reached to the centre of the earth over there we saw cave people, vikings, pirates, dinosauses and even dragons so we quikly hid behind some bushes and then walked away."
-                </div>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (1).jpeg" alt="Centre of Earth drawing">
-                        <div class="img-label">Illustration: Cave person and fire-breathing dragon</div>
+                        <img src="illustrations/page8_centre_earth.png" alt="Page 8: Centre of the Earth Illustration">
+                        <div class="img-label">Publisher Illustration — Page 8: Centre of the Earth</div>
+                    </div>
+                </div>
+                <div class="story-bubble">
+                    ...we reached the Centre of the Earth! Over there, we saw cave people, Vikings, pirates, dinosaurs, and even fire-breathing dragons! We quickly hid behind some bushes and tiptoed away.
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (1).jpeg" alt="Original drawing for Page 8: Centre of the Earth">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 10: CLOUD CASTLE -->
+            <!-- PAGE 9: THE CLOUD CASTLE -->
             <div id="page-10" class="page-content">
                 <h2 class="page-title">Page 9: The Cloud Castle</h2>
-                <div class="story-bubble">
-                    "And then...... we found a cloud castle in there we did all kinds off things and then we found a rose and on that rose it showed how to go to magical world."
-                </div>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (2).jpeg" alt="Cloud castle drawing">
-                        <div class="img-label">Illustration: Cloud castle with friends holding magical rose</div>
+                        <img src="illustrations/page9_cloud_castle.png" alt="Page 9: The Cloud Castle Illustration">
+                        <div class="img-label">Publisher Illustration — Page 9: The Cloud Castle</div>
+                    </div>
+                </div>
+                <div class="story-bubble">
+                    And then... we found a magical Cloud Castle! After doing all kinds of fun things inside, we discovered a special rose that showed us the way to the Magical World.
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (2).jpeg" alt="Original drawing for Page 9: The Cloud Castle">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 11: MAGICAL WORLD -->
+            <!-- PAGE 10: THE MAGICAL WORLD -->
             <div id="page-11" class="page-content">
                 <h2 class="page-title">Page 10: The Magical World</h2>
-                <div class="story-bubble">
-                    "We followed the way how to go there and we reached over there we played with gnomes, found emeralds with dwarfs, chit chated with elves, did magic with faries and even cackeled with witches"
-                </div>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (3).jpeg" alt="Magical creatures drawing">
-                        <div class="img-label">Illustration: Gnomes, dwarfs, and fairies doing magic</div>
+                        <img src="illustrations/page10_magical_world.png" alt="Page 10: The Magical World Illustration">
+                        <div class="img-label">Publisher Illustration — Page 10: The Magical World</div>
+                    </div>
+                </div>
+                <div class="story-bubble">
+                    We followed the directions on the rose until we reached the Magical World. There, we played with gnomes, hunted for emeralds with dwarfs, chitchatted with elves, practiced magic with fairies, and even cackled with witches!
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (3).jpeg" alt="Original drawing for Page 10: The Magical World">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 12: FLIGHT TO BANGALORE -->
+            <!-- PAGE 11: FLIGHT HOME TO BANGALORE -->
             <div id="page-12" class="page-content">
                 <h2 class="page-title">Page 11: Flight Home to Bangalore</h2>
-                <div class="story-bubble">
-                    "And guss what after that we had a peaceful nap on the plane and then we reached banglore."
-                </div>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (4).jpeg" alt="IndiGo plane drawing">
-                        <div class="img-label">Illustration: Yellow IndiGo plane with sleeping passengers</div>
+                        <img src="illustrations/page11_indigo_plane.png" alt="Page 11: Flight Home to Bangalore Illustration">
+                        <div class="img-label">Publisher Illustration — Page 11: Flight Home to Bangalore</div>
+                    </div>
+                </div>
+                <div class="story-bubble">
+                    And guess what? After all that excitement, we had a peaceful nap on the IndiGo plane and arrived safely back in Bangalore.
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (4).jpeg" alt="Original drawing for Page 11: Flight Home to Bangalore">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 13: PLANET EARTH 2 & UNICORN -->
+            <!-- PAGE 12: PLANET EARTH 2 & THE MYSTERIOUS UNICORN -->
             <div id="page-13" class="page-content">
-                <h2 class="page-title">Page 12: Planet Earth 2 & Mysterious Unicorn</h2>
-                <div class="story-bubble">
-                    "The next day we had to go to school and we didn't study in school we went to planet earth 2 over there was a meige and diffent school, shops, clothes, studys, homes, culture, language and tradition but the most meige and diffent thing of all was the mysteriouse unicorn it had a totaly new style, clothes, home, culture, tradition, language and colour! it was blue, green and yellow together! but the most sad thing of all was it had No friends so when we sad that you could be our friend we understud its language so we used to come to its home and sometimes it even came to ours."
-                </div>
+                <h2 class="page-title">Page 12: Planet Earth 2 & The Mysterious Unicorn</h2>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (5).jpeg" alt="Page 12 handwritten text">
-                        <div class="img-label">Original Handwritten Page 12 (Part 1)</div>
+                        <img src="illustrations/page12_mysterious_unicorn.png" alt="Page 12: Planet Earth 2 & The Mysterious Unicorn Illustration">
+                        <div class="img-label">Publisher Illustration — Page 12: Planet Earth 2 & The Mysterious Unicorn</div>
                     </div>
-                    <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (6).jpeg" alt="Mysterious Unicorn drawing">
-                        <div class="img-label">Illustration: Mysterious Unicorn and alien culture</div>
+                </div>
+                <div class="story-bubble">
+                    The next day, we went to school—but instead of studying, we traveled to Planet Earth 2! Everything there was unique and different: the schools, shops, clothes, homes, language, and traditions. The most extraordinary sight of all was the Mysterious Unicorn, brilliantly colored in blue, green, and yellow! The saddest thing, however, was that it had no friends. When we said, 'You can be our friend!', we suddenly understood its language! From then on, we often visited its home, and sometimes it even came to visit ours.
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (5).jpeg" alt="Original drawing for Page 12: Planet Earth 2 & The Mysterious Unicorn">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
+<div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (6).jpeg" alt="Original drawing for Page 12: Planet Earth 2 & The Mysterious Unicorn">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PAGE 14: WHERE TO NEXT? -->
+            <!-- PAGE 13: WHERE TO NEXT? -->
             <div id="page-14" class="page-content">
                 <h2 class="page-title">Page 13: Where to Next?</h2>
-                <div class="story-bubble">
-                    "That night when we came home all of us wondered in there own house were will we go next canada or USA."
-                </div>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (7).jpeg" alt="Souvenirs and thinking of next destination">
-                        <div class="img-label">Illustration: Friends holding souvenirs (Map, Chocolate, Rose) dreaming of USA or Canada</div>
+                        <img src="illustrations/page13_souvenirs_next.png" alt="Page 13: Where to Next? Illustration">
+                        <div class="img-label">Publisher Illustration — Page 13: Where to Next?</div>
+                    </div>
+                </div>
+                <div class="story-bubble">
+                    That night, back in our own homes, each of us held onto our favorite souvenirs—the Treasure Island map, the Chocolate Island candy, and the Cloud Castle rose—and wondered: Where will we go next? Canada or the USA?
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                    <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (7).jpeg" alt="Original drawing for Page 13: Where to Next?">
+                    <div class="img-label">Mishka's Original Handmade Page</div>
+                </div>
                     </div>
                 </div>
             </div>
 
             <!-- PAGE 15: BACK COVER -->
             <div id="page-15" class="page-content">
-                <h2 class="page-title">THE END</h2>
-                <div class="story-bubble" style="text-align: center;">
-                    <strong>THE END ❤️❤️❤️</strong><br>
-                    Written by <em>Mishka Pant</em><br>
-                    Illustrated by <em>Mishka Pant</em>
-                </div>
+                <h2 class="page-title">THE END ❤️❤️❤️</h2>
+                <p style="text-align: center; font-size: 1.2rem; color: #1b6ca8; font-weight: bold; margin-bottom: 1rem;">
+                    Written by Mishka Pant &bull; Illustrated by Mishka Pant
+                </p>
                 <div class="image-gallery">
                     <div class="img-wrapper">
-                        <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (8).jpeg" alt="Back Cover">
-                        <div class="img-label">Original Back Cover Page</div>
+                        <img src="illustrations/back_cover_illustration.png" alt="Back Cover Illustration">
+                        <div class="img-label">Publisher Edition Back Cover</div>
+                    </div>
+                </div>
+                <div class="about-book-card">
+                    <h3>About the Book</h3>
+                    <p>What starts as a holiday flight to Singapore turns into the adventure of a lifetime! Join eight-year-old Mishka and her best friends, Mira and Billy, as they journey across magical islands and beyond. From outsmarting bears on Greenland Island and riding camels past volcanoes, to tumbling through a space portal, visiting a candy house, sneaking past dragons at the Centre of the Earth, and befriending a lonely multi-colored unicorn on Planet Earth 2—this imaginative tale celebrates friendship, curiosity, and the boundless magic of childhood.</p>
+                </div>
+                <div class="original-drawings-section">
+                    <div class="image-gallery">
+                        <div class="img-wrapper">
+                            <img src="photos/WhatsApp Image 2026-07-17 at 4.32.19 PM (8).jpeg" alt="Original Back Cover">
+                            <div class="img-label">Mishka's Original Handmade Back Cover</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </main>
 
     <footer>
-        <p>Created with ❤️ from Mishka Pant's handmade book "The Giant Adventure".</p>
+        <p><strong>The Giant Adventure</strong> &bull; Written &amp; Illustrated by Mishka Pant (Age 8)</p>
     </footer>
 
     <script src="script.js"></script>
